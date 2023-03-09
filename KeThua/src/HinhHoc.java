@@ -1,65 +1,31 @@
 
 
 public class HinhHoc {
-    private float PI = 3.14f;
-    private String ten;
-    private float chuVi;
-    private float dienTich;
-    private float theTich;
+    public float PI = 3.14f;
+    public String ten;
+    public float chuVi;
+    public float dienTich;
+    public float theTich;
 
     public HinhHoc() {
     }
 
-    public float getPI() {
-        return PI;
-    }
-
-    public void setPI(float PI) {
-        this.PI = PI;
-    }
-
-    public String getTen() {
-        return ten;
-    }
-
-    public void setTen(String ten) {
-        this.ten = ten;
-    }
-
-    public float getChuVi() {
-        return chuVi;
-    }
-
-    public void setChuVi(float chuVi) {
-        this.chuVi = chuVi;
-    }
-
-    public float getDienTich() {
-        return dienTich;
-    }
-
-    public void setDienTich(float dienTich) {
-        this.dienTich = dienTich;
-    }
-
-    public float getTheTich() {
-        return theTich;
-    }
-
-    public void setTheTich(float theTich) {
-        this.theTich = theTich;
-    }
 
     public void xuatTen() {
+        System.out.println("Ten: "+ ten);
     }
 
     public void inChuVi() {
+        System.out.println("Chu vi= "+chuVi);
     }
 
     public void inDienTich() {
+        System.out.println("Dien tich = "+ dienTich);
     }
 
+
     public void inTheTich() {
+        System.out.println("The tich= "+theTich);
     }
 }
 
