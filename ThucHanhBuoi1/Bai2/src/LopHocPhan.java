@@ -4,13 +4,6 @@ public class LopHocPhan {
     ArrayList <SinhVien> svs;
     private String maLHP, tenLHP, tenGV, thongTinLopHoc;
 
-    public LopHocPhan(String maLHP, String tenLHP, String tenGV, String thongTinLopHoc) {
-        this.maLHP = maLHP;
-        this.tenLHP = tenLHP;
-        this.tenGV = tenGV;
-        this.thongTinLopHoc = thongTinLopHoc;
-    }
-
     public LopHocPhan(ArrayList<SinhVien> svs, String maLHP, String tenLHP, String tenGV, String thongTinLopHoc) {
         this.svs = svs;
         this.maLHP = maLHP;
