@@ -85,7 +85,7 @@ public class Account {
     @Override
     public String toString() {
         return "Account{" +
-                "soTien=" + soTien +
+                "soTien=" + format.format(soTien) +
                 ", soTK=" + soTK +
                 ", tenTK='" + tenTK + '\'' +
                 ", trangThai='" + trangThai + '\'' +
