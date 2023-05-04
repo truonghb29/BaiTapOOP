@@ -53,7 +53,7 @@ public class QuanLy {
     }
 
     public void menu() {
-        System.out.printf("-----QUAN LY XE-----\n" +
+        System.out.printf("-----QUAN LY THUC PHAM-----\n" +
                 "1. Nhap thong tin\n" +
                 "2. Xuat ban ke khai\n" +
                 "3. Thoat\n");

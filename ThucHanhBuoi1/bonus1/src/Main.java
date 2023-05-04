@@ -54,7 +54,7 @@ public class Main {
         );
     }
     public void menu() {
-        System.out.printf("-----QUAN LY XE-----\n" +
+        System.out.printf("-----QUAN LY SINH VIEN-----\n" +
                 "1. Nhap thong tin\n" +
                 "2. Xuat thong tin\n" +
                 "3. Thoat\n");
