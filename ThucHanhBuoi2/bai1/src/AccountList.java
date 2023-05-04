@@ -27,7 +27,8 @@ public class AccountList {
             accList.add(acc);
         }
     }
-    public void xoaTk(int soTK) {
+
+    public void xoaTk(long soTK) {
         Iterator<Account> iterator = accList.iterator();
         while (iterator.hasNext()) {
             Account acc = iterator.next();
@@ -40,21 +41,25 @@ public class AccountList {
 
         System.out.println("Khong tim thay tai khoan " + soTK);
     }
-    public void timTK(int soTK){
-        for(Account acc : accList){
-            if(acc.getSoTK() == soTK){
+
+    public void timTK(long soTK) {
+        for (Account acc : accList) {
+            if (acc.getSoTK() == soTK) {
                 System.out.println(acc.toString());
             }
         }
     }
-    public int soLuong(){
+
+    public int soLuong() {
         return accList.size();
     }
-    public void xuat(){
-        for (Account acc : accList){
+
+    public void xuat() {
+        for (Account acc : accList) {
             System.out.println(acc.toString());
         }
     }
+
     public void napTien() {
         Scanner sc = new Scanner(System.in);
         System.out.printf("Nhap so tai khoan cua ban: ");
@@ -152,14 +157,17 @@ public class AccountList {
         }
         System.out.println("Khong tim thay so tai khoan nay");
     }
-     public void menu(){
-         System.out.printf("------MENU------\n" +
-                 "1.Them\n" +
-                 "2.So tai khoan hien co\n" +
-                 "3.In tat ca thong tin\n" +
-                 "4.Nap tien \n" +
-                 "5.Rut tien\n" +
-                 "6.Chuyen tien\n" +
-                 "0.Thoat khoi chuong trinh\n");
-     }
+
+    public void menu() {
+        System.out.printf("------MENU------\n" +
+                "1.Them\n" +
+                "2.So tai khoan hien co\n" +
+                "3.In tat ca thong tin\n" +
+                "4.Nap tien \n" +
+                "5.Rut tien\n" +
+                "6.Chuyen tien\n" +
+                "7.Xoa tai khoan\n" +
+                "8.Tim tai khoan\n" +
+                "0.Thoat khoi chuong trinh\n");
+    }
 }

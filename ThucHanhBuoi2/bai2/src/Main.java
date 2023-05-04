@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        CD cd = new CD();
+        CDList cd = new CDList();
+        CD cd1 = new CD();
         int luachon = 0;
         Scanner sc = new Scanner(System.in);
         do {
@@ -10,7 +11,8 @@ public class Main {
             System.out.printf("Nhap lua chon: ");
             luachon = sc.nextInt();
             if (luachon == 1) {
-                cd.them();
+                cd1 = new CD();
+                cd.them(cd1);
             } else if (luachon == 2) {
                 System.out.println("So tai khoan hien co la: "+ cd.count());
             } else if (luachon == 3) {

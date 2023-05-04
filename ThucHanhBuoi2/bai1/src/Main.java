@@ -22,6 +22,15 @@ public class Main {
                 a.rutTien();
             } else if (luachon == 6) {
                 a.chuyenKhoan();
+            } else if (luachon == 7) {
+                System.out.printf("Nhap stk muon xoa: ");
+                long stk = sc.nextLong();
+                a.xoaTk(stk);
+            } else if (luachon == 8) {
+                System.out.printf("Nhap stk muon tim: ");
+                long stk = sc.nextLong();
+                a.timTK(stk);
+
             }
         } while (luachon != 0);
     }
