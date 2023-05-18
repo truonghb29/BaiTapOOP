@@ -10,17 +10,24 @@ public class Main {
         Product p1 = new Product("Nuoc tuong", "sp4", 8000);
         OrderDetail o1 = new OrderDetail(p1,10);
         Product p2 = new Product("Gao", "sp1", 18000);
-        OrderDetail o2 = new OrderDetail(p1,5);
+        OrderDetail o2 = new OrderDetail(p2,5);
         Product p3 = new Product("Duong", "sp3", 10000);
-        OrderDetail o3 = new OrderDetail(p1,1);
+        OrderDetail o3 = new OrderDetail(p3,1);
         Product p4 = new Product("Gao", "sp1", 18000);
-        OrderDetail o4 = new OrderDetail(p1,1);
+        OrderDetail o4 = new OrderDetail(p4,1);
+        Product p5 = new Product("Mi goi", "sp5", 5000);
+        OrderDetail o5 = new OrderDetail(p5,1);
+        Product p6 = new Product("Keo", "sp2", 3000);
+        OrderDetail o6 = new OrderDetail(p5,1);
         Order order = new Order(1, LocalDate.now());
         order.lineItems = new ArrayList<>();
         order.addLineItem(p1, o1.getQuantity());
         order.addLineItem(p2, o2.getQuantity());
         order.addLineItem(p3, o3.getQuantity());
         order.addLineItem(p4, o4.getQuantity());
+        order.addLineItem(p5, o5.getQuantity());
+        order.addLineItem(p6, o6.getQuantity());
+
         System.out.println("MA HD: " + order.getOrderID());
         System.out.println("Ngay lap hoa don: "+ order.getOrderDate());
 
