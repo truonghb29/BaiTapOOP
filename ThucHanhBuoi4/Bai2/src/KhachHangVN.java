@@ -72,7 +72,7 @@ public class KhachHangVN extends KhachHang {
     public void nhap() {
         super.nhap();
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Nhap loai khach hang: ");
+        System.out.printf("Nhap loai khach hang (sinh hoat/ kinh doanh/ san xuat) : ");
         loaiKhachHang = sc.nextLine();
         System.out.printf("Nhap so luong: ");
         soLuong = sc.nextInt();

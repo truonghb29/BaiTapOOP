@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class KhachHangNuocNgoai extends KhachHang {
     private String quocTich;
@@ -50,5 +51,17 @@ public class KhachHangNuocNgoai extends KhachHang {
                 "\nQuoc tich: " + quocTich +
                 "\nSo luong: " + soLuong +
                 "\nDon gia: " + donGia;
+    }
+
+    @Override
+    public void nhap() {
+        super.nhap();
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("Nhap quoc tich: ");
+        quocTich = sc.nextLine();
+        System.out.printf("Nhap so luong: ");
+        soLuong = sc.nextInt();
+        System.out.printf("Nhap don gia: ");
+        donGia = sc.nextDouble();
     }
 }
